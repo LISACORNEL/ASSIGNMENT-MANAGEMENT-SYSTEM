@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Error Pop-up
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+    .error-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+    text-align: center;
+    color: #d9534f;
+    }
+    p {
+    margin-bottom: 16px;
+    color: #555;
+    }
+    button {
+    padding: 12px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #c9302c;
+    }
+.error-popup
+  h2 Error
+  p Something went wrong. Please try again.
+  button(onclick='closePopup()') Close
+script.
+  function closePopup() {
+  document.querySelector('.error-popup').style.display = 'none';
+  }

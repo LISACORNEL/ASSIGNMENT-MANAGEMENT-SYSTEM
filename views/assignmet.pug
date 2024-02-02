@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Assignment Checking
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+    .assignment-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+    text-align: center;
+    color: #333;
+    }
+    p {
+    margin-bottom: 16px;
+    color: #555;
+    }
+    button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #0056b3;
+    }
+.assignment-container
+  h2 Assignment Checking
+  p Welcome, Student!
+  p
+    | Your Student ID: 
+    strong 123456
+  p Assignment Details:
+  ul
+    li
+      strong Assignment 1:
+      |  Submitted
+    li
+      strong Assignment 2:
+      |  Not Submitted
+    // Add more assignment details as needed
+  button(type='button') Logout

@@ -1,0 +1,69 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Assignment Submission
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+    .submission-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+    text-align: center;
+    color: #333;
+    }
+    p {
+    margin-bottom: 16px;
+    color: #555;
+    }
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+    label {
+    margin-bottom: 8px;
+    color: #555;
+    }
+    input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    button {
+    padding: 12px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #218838;
+    }
+.submission-container
+  h2 Assignment Submission
+  p Welcome, Student!
+  p
+    | Your Student ID: 
+    strong 123456
+  form
+    label(for='assignmentFile') Select File:
+    input#assignmentFile(type='file' name='assignmentFile' accept='.pdf, .doc, .docx' required='')
+    button(type='submit') Submit Assignment
+
+// Display grades in the submissions.pug template
+each submission in submissions
+    p= submission.submission_text
+    p Grade: #{submission.grade}
