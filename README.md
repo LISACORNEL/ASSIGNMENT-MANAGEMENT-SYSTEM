@@ -37,3 +37,5 @@ Explore the features of the Assignment Management System.
 
 Contributing
 Feel free to contribute to the project by submitting issues or pull requests. Your feedback and contributions are highly appreciated!
+![1](https://github.com/LISACORNEL/ASSIGNMENT-MANAGEMENT-SYSTEM/assets/55915965/70bb8c07-1b87-4104-bee7-d67940b1fb4e)
+![2](https://github.com/LISACORNEL/ASSIGNMENT-MANAGEMENT-SYSTEM/assets/55915965/1adb10b6-37c8-408b-8113-2bd94240f210) SOME SCREENSHOTS OF THE SYSTEM
